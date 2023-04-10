@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b219ab309.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/FHCC LOGO NO BKG.png" type="image/x-icon">
+    <title>Contact - FHCC</title>
+</head>
+<body>
+    <!------------------ NAVIGATION BAR -------------------->
+    <section class="header">
+      <div class="navbar">
+        <div class="nav-logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="nav-title">FLOWER HOUSE <br>CRECHE CARE</div>
+        <nav class="nav-menu" id="navLinks">       
+          <i class="menu-icon fas fa-times d-md-none" onclick="hideMenu()"></i>  
+            
+              <a href="index.html">
+                <div class="nav-item">
+                <i class=" nav-icon fas fa-home"></i></div>HOME
+              </a>
+            
+              <a href="gallery.html">
+                <div class="nav-item">
+                <i class=" nav-icon fas fa-images"></i></div>GALLERY
+              </a>
+              
+              <a href="about.html">
+                <div class="nav-item">
+                <i class=" nav-icon fas fa-info-circle"></i></div>ABOUT
+              </a>
+
+              <a href="contact.html">
+                <div class="nav-item">
+                <i class=" nav-icon fas fa-envelope-open-text"></i></div>CONTACT
+              </a>
+        </nav>
+      <i class="menu-icon d-md-none fas fa-bars" onclick="showMenu()"></i>
+      </div>
+    </section>
+
+    <div class="sub-header">
+        <h1>CONTACT<br> US</h1>
+    </div>
+    
+    <div class="contactus-container">
+        <div class="contactus-box">
+            <div class="contactus-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contactus-text">
+                <h3>Call</h3>
+                <p><a href="tel:+2348022242422"> 08022242422</a><br><a href="tel:+2348072821395"> 08072821395</a></p>
+            </div>
+        </div>
+
+        <div class="contactus-box">
+            <div class="contactus-icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="contactus-text">
+                <h3>E-mail</h3>
+                <p><a href = "mailto: fhcceduprogram@gmail.com">fhcceduprogram@gmail.com</a></p>
+            </div>
+        </div>
+            
+        <div class="contactus-box">
+            <div class="contactus-icon">
+                <i class="far fa-comments"></i>
+            </div>
+            <div class="contactus-text">
+                <h3>Social Media</h3>
+                <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/+2348022242422" target="_blank">08022242422</a><br><i class="fab fa-facebook-square"></i><a href="https://facebook.com/fhcrechecare/"target="_blank">Flower House Creche Care</a></p>
+            </div>
+        </div>
+
+        <div class="contactus-box">
+            <div class="contactus-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contactus-text">
+                <h3>Address</h3>
+                <p>50, Eyita-Ojokoro Road, Off Sagamu Road, Ile-Epo-Oba Okada Park, Ikorodu, Lagos State, Nigeria</p>
+            </div>
+        </div>
+
+        <div class="contactus-box">
+            <div class="contactus-icon">
+                <i class="far fa-clock"></i>
+            </div>
+            <div class="contactus-text">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday <br> 6am - 8pm</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row form-map">
+        <div class="col-md-7 contactus-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0936444497347!2d3.500448414266918!3d6.635291523695732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bebf8656423dd%3A0x6c1d4e9bda430f71!2sFlower%20House%20Creche%20Care!5e0!3m2!1sen!2sng!4v1680644882134!5m2!1sen!2sng"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+        </div>
+        <div class="col-md-5 contactus-form">
+            <h5>SEND US A MESSAGE</h5>
+            <form action="https://formsubmit.co/seyibowale15@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" class="form-control" required>
+                <input type="email" name="email" placeholder="Enter your email address" class="form-control" required>
+                <textarea rows="8" name="message" placeholder="Message" class="form-control" required></textarea>
+                <input type="hidden" name="_next" value="http://192.168.236.90:5500/thanks.html">
+                <input type="hidden" name="_subject" value="New Enquiry!">
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <section class="footer">
+        <div class="footer-container">
+          <div class="footer1">
+            <h4>GET IN TOUCH</h4>
+            <div class="contact-icons">
+              <a href="tel:+2348022242422"><img src="images/phone2-removebg-preview.png"></a>
+              
+              <a href="https://wa.me/+2348022242422" target="_blank"><img src="images/whatsapp_nobk.png"></a>
+              
+              <a href="https://facebook.com/fhcrechecare/" target="_blank"><img src="images/facebook-logo-2019.png"></a>
+              
+              <a href = "mailto: fhcceduprogram@gmail.com"><img src="images/gmail2.png"></a>
+            </div>
+          </div>
+          <div class="footer2">
+            <h5>Copyright &#169; 2023 - Flower House Creche Care.<br> All Rights Reserved</h5>
+            <br>
+            <p>Designed by <a href="https://wa.me/+2347062367015">Sky Level Technologies</a></p>
+          </div>
+        </div>
+        </section>
+
+        
+      
+      <!------------ Javascript for responsive nav ------------->
+      <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-300px";
+        }
+        </script>
