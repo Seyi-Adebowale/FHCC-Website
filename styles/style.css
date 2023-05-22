@@ -39,7 +39,7 @@
 .mission {
   width: 100%;
   margin: 0 auto;
-  background-image: url(../images/Hnet.com-image.jpg);
+  background-image: url(../images/Hnet.com-image.webp);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -140,7 +140,7 @@
   transform: rotate(360deg);
 }
 #whychooseus {
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg.webp);
   background-size: cover;
 }
 .why-container {
