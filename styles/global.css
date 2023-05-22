@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-style: bold;
+  display: swap;
+}
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +44,7 @@
 }
 .nav-title {
   color: #159947;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1.2rem;
   width: 38%;
   padding: 0;
@@ -71,10 +84,11 @@
   background-color: #f78914;
   cursor: pointer;
 }
-.nav-menu ul li.selected{
+.nav-menu ul li.selected {
   background-color: #f78914;
 }
-.nav-menu ul li.selected a, .nav-menu ul li.selected .fas{
+.nav-menu ul li.selected a,
+.nav-menu ul li.selected .fas {
   color: white;
 }
 .nav-menu a:hover,
@@ -168,13 +182,9 @@ main {
 }
 .welcome-text-heading {
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin: 0px;
   padding-top: 20px;
-}
-.welcome-text-heading h4 {
-  color: white;
-  font-weight: bold;
 }
 .sub-header h1 {
   color: white;

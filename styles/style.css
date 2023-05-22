@@ -1,9 +1,21 @@
-@import '../styles/global.css';
+@import "../styles/global.css";
 
-.carousel-item img {
-    max-height: 87vh;
+.main-carousel .carousel-item img{
+  max-height: 87vh;
 }
-.carousel-control-prev-icon, 
+.main-carousel .carousel-indicators [data-bs-target] {
+  height: 15px;
+  border: 2px solid white;
+  width: 15px;
+  background-color: inherit;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+.main-carousel .carousel-indicators .active {
+  border: 2px solid transparent;
+  background-color: #fff;
+}
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
   width: 5vh;
   height: 5vh;
@@ -164,7 +176,7 @@
 }
 .testimonial {
   background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-    url(../images/Landscape.jpg);
+    url(../images/Landscape.webp);
   background-position: center;
   background-size: cover;
   padding: 10px 0 30px;
