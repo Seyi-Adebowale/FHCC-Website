@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/enrol-style.css" />
+    <script
+      src="https://kit.fontawesome.com/6b219ab309.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/FHCC LOGO NO BKG.png"
+      type="image/x-icon"
+    />
+    <title>Enrol Now - Flower House Creche Care</title>
+  </head>
+  <body>
+    <!------------------ NAVIGATION BAR -------------------->
+    <section class="header">
+      <div class="navbar">
+        <div class="nav-logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav-title">FLOWER HOUSE <br />CRECHE CARE</div>
+        <nav class="nav-menu" id="navLinks">
+          <i class="menu-icon fas fa-times d-md-none" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="index.html">
+                <div class="nav-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="nav-name">Home</div>
+              </a>
+            </li>
+            <li>
+              <a href="services.html">
+                <div class="nav-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="nav-name">Services</div>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <div class="nav-icon">
+                  <i class="fas fa-images"></i>
+                </div>
+                <div class="nav-name">Gallery</div>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <div class="nav-icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="nav-name">About</div>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <div class="nav-icon">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="nav-name">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <i class="menu-icon d-md-none fas fa-bars" onclick="showMenu()"
+          ><p>MENU</p></i
+        >
+      </div>
+    </section>
+
+    <main>
+      <div class="sub-header enrol-header">
+        <h1>
+          ENROL<br />
+          NOW
+        </h1>
+      </div>
+
+      <div class="enrol">
+        <div class="enrol-form-header">
+          <h4>JOIN THE FLOWER HOUSE CRECHE CARE FAMILY</h4>
+          <h5>
+            Kindly note that filling this form is an
+            <b>expression of interest</b> to enrol. <br />
+            After submitting this form, you'll be contacted and required to pay
+            a non-refundable enrolment fee of <b>&#8358;2,000</b> before
+            proceeding to fill the Enrolment and Agreement forms.
+          </h5>
+        </div>
+        <div class="enrol-form">
+          <form
+            action="https://formsubmit.co/seyibowale15@gmail.com"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="Name of child"
+              placeholder="Child's Full Name"
+              class="form-control"
+              required
+            />
+            <span>Gender:</span> &nbsp;
+            <input type="radio" id="gender1" name="Gender" value="Male" />
+            <label for="gender1">Male</label> &nbsp;
+            <input type="radio" id="gender2" name="Gender" value="Female" />
+            <label for="gender2">Female</label> <br />
+            <span>Child's Date of Birth:</span>
+            <input
+              type="date"
+              name="Date of birth"
+              class="form-control span-label"
+              required
+            />
+            <input
+              type="text"
+              name="Enquirer's Name"
+              placeholder="Your Name"
+              class="form-control"
+              required
+            />
+            <input
+              type="text"
+              name="Relationship to Child"
+              placeholder="Relationship to child"
+              class="form-control"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email Address"
+              class="form-control"
+              required
+            />
+            <input
+              type="tel"
+              name="Phone number"
+              placeholder="Your Phone Number"
+              class="form-control"
+              required
+            />
+            <input
+              type="tel"
+              name="WhatsApp number"
+              placeholder="Your WhatsApp Number"
+              class="form-control"
+              required
+            />
+            <p>How do you want to be contacted?</p>
+            <input
+              type="radio"
+              id="contact1"
+              name="contact-means"
+              value="Via-Email"
+            />
+            <label for="contact1">Via Email</label><br />
+            <input
+              type="radio"
+              id="contact2"
+              name="contact-means"
+              value="Via-Call"
+            />
+            <label for="contact2">Via Phone call</label><br />
+            <input
+              type="radio"
+              id="contact3"
+              name="contact-means"
+              value="Via-WhatsApp"
+            />
+            <label for="contact3">Via WhatsApp message</label><br />
+            <textarea
+              rows="4"
+              name="message"
+              placeholder="Comments"
+              class="form-control"
+            ></textarea>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://192.168.90.89:5502/thanks.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Interest to Enrol!" />
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer1">
+            <h4>GET IN TOUCH</h4>
+            <div class="contact-icons">
+              <a href="tel:+2348022242422"
+                ><img src="images/phone2-removebg-preview.png"
+              /></a>
+
+              <a href="https://wa.me/+2348073362906" target="_blank"
+                ><img src="images/whatsapp_nobk.png"
+              /></a>
+
+              <a href="https://facebook.com/fhcrechecare/" target="_blank"
+                ><img src="images/facebook-logo-2019.png"
+              /></a>
+
+              <a href="mailto: fhcceduprogram@gmail.com"
+                ><img src="images/gmail2.png"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer2">
+            <h5>
+              Copyright &#169; 2023 - Flower House Creche Care.<br />
+              All Rights Reserved
+            </h5>
+            <br />
+            <div class="designer">
+              <p>
+                Designed by
+                <a href="https://wa.me/+2347062367015"
+                  >Sky Level Technologies</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

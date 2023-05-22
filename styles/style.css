@@ -1,0 +1,324 @@
+@import '../styles/global.css';
+
+.carousel-item img {
+    max-height: 87vh;
+}
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  width: 5vh;
+  height: 5vh;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+.mission {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../images/Hnet.com-image.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  height: 200px;
+}
+.mission h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.text-block {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  padding: 10px;
+  height: 160px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-block h2 {
+  color: #159947;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.text-block p {
+  color: #f78914;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.programs {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  padding-top: 10px;
+}
+.service-logo img {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  transition: transform 1s;
+}
+.programs-container {
+  padding-top: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.service {
+  border: 4px solid #159947;
+  width: 300px;
+  height: 220px;
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+.service-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background-color: white;
+  border: 4px solid #159947;
+}
+.service h3,
+.why-choose h3 {
+  text-transform: uppercase;
+  color: #159947;
+  font-size: 18px;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+.service p,
+.why-choose p {
+  padding: 5px 10px 10px 10px;
+  color: #f78914;
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.service:hover {
+  transform: translateY(-20px);
+  transition: 1s;
+}
+.service:hover img {
+  transform: rotate(360deg);
+}
+#whychooseus {
+  background-image: url(../images/bg.png);
+  background-size: cover;
+}
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  grid-gap: 30px;
+  padding: 20px;
+}
+.why-logo img {
+  width: 100px;
+  height: 80px;
+  transition: transform 1s;
+  margin: auto;
+  transition: transform 1s;
+}
+.why-choose {
+  cursor: pointer;
+  border-radius: 10px;
+}
+.why-choose:hover img {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+.why-choose:hover {
+  background-color: white;
+  border: 4px solid green;
+  transform: translateY(-20px);
+}
+.why-logo {
+  margin-top: 10px;
+  text-align: center;
+}
+.testimonial {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../images/Landscape.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 0 30px;
+}
+.testimonial .container {
+  max-width: 600px;
+  background-color: white;
+  padding: 0;
+  border-radius: 25px;
+  box-shadow: 0 2px 20px rgba(0, 128, 0, 0.8);
+}
+.testimonial .carousel-item {
+  height: 320px;
+}
+.review {
+  font-size: 1.2rem;
+  color: #f78914;
+  text-align: center;
+  font-weight: bold;
+}
+.person {
+  color: #159947;
+  text-align: center;
+  font-weight: bold;
+}
+.testimonial .carousel-inner {
+  max-width: 800px;
+}
+.testimonial .carousel-indicators {
+  bottom: -40px;
+  right: 0;
+  margin: 0;
+}
+.testimonial i {
+  color: #f78914;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+.testimonial .img-text {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 20px;
+  width: 100%;
+}
+.testimonial .carousel-indicators [data-bs-target] {
+  height: 15px;
+  border: 2px solid white;
+  width: 15px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+.testimonial .carousel-indicators .active {
+  border: 2px solid transparent;
+  background-color: #fff;
+}
+.testimonial .left {
+  color: white;
+  font-weight: 900;
+}
+.testimonial .right {
+  color: white;
+  font-weight: 900;
+}
+.testimonial .carousel-control-next,
+.testimonial .carousel-control-prev {
+  position: relative;
+}
+.home-gallery {
+  padding: 20px 10px 0px;
+}
+.home-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.home-gallery-img {
+  margin: auto;
+  width: 320px;
+}
+.home-gallery-img img {
+  width: 320px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.home-contact {
+  text-align: center;
+  color: #159947;
+  margin: 20px 0px;
+}
+.home-contact h3 {
+  color: #f58b00;
+  font-weight: bold;
+}
+
+@media (max-width: 565px) {
+  .testimonial .img-text {
+    text-align: center;
+  }
+  .review {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  .long-review {
+    font-size: 0.9rem;
+  }
+  .person {
+    font-size: 14px;
+  }
+  .right {
+    font-size: 12px;
+  }
+  .left {
+    font-size: 12px;
+  }
+  .testimonial .carousel-indicators [data-bs-target] {
+    height: 8px;
+    width: 8px;
+    background-color: inherit;
+    border-radius: 50%;
+  }
+  .testimonial .carousel-indicators .active {
+    border: 1px solid transparent;
+    background-color: white;
+  }
+  .home-gallery-img {
+    width: 100%;
+  }
+  .home-gallery-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .text-block {
+    width: 85%;
+  }
+}
+@media (max-width: 720px) {
+  .text-block {
+    width: 90%;
+  }
+  .text-block h2 {
+    font-size: 1.5rem;
+  }
+  .text-block p {
+    font-size: 1rem;
+  }
+  .programs-container {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,93 @@
+@import '../styles/global.css';
+
+.about-header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/KidsLibrary.jpg);
+}
+figure {
+  text-align: center;
+  padding: 2%;
+  color: black;
+}
+figure p {
+  font-size: 2rem;
+}
+.blockquote {
+  color: #f78914;
+}
+.blockquote-footer {
+  font-size: 1.3rem;
+  color: #159947;
+}
+.about-text {
+  column-count: 2;
+  column-gap: 30px;
+  padding: 0 4%;
+  line-height: 35px;
+  text-align: justify;
+}
+.about-text span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.about-text a {
+  text-decoration: none;
+}
+.download-btn {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.download-btn:hover {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  text-decoration: underline;
+}
+.proprietor-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+}
+.proprietor {
+  margin-top: 50px;
+}
+.proprietor-img {
+  margin: auto;
+}
+.proprietor-img img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 2px solid green;
+  margin: auto;
+}
+.lead {
+  font-weight: bold;
+  list-style-type: none;
+  color: #f78914;
+}
+.proprietor ul {
+  list-style-type: disc;
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+.proprietor h5 {
+  text-align: right;
+  font-weight: bold;
+  color: #159947;
+}
+.container {
+  padding: 0;
+}
+@media (max-width: 700px) {
+  .about-text {
+    column-count: 1;
+    column-gap: 30px;
+  }
+  .about-text span {
+    text-align: center;
+  }
+}

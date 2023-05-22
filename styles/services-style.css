@@ -1,0 +1,35 @@
+@import '../styles/global.css';
+
+.services-header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/SERVICES.jpg);
+}
+.services-container{
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.services-box{
+  border: 2px solid #159947;
+  border-radius: 20px;
+  width: 400px;
+  word-wrap: break-word;
+  padding: 0px 20px;
+  margin-bottom: 40px;
+}
+.services-text{
+  color: #f78914;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 30px;
+}
+.services-text p a{
+  color: #159947;
+}
+.services-text p a:hover{
+  color: blue;
+}

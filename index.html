@@ -1,327 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="creche, day care, child care, nursery, pre school, kindergarten, creche in ikorodu, day care in ikorodu, creche in lagos, day care in lagos">
+    <meta name="description" content="Looking for High Quality Child Care and Early Education? Flower House Creche Care provides the best creche and day care services in Ikorodu, Lagos State, Nigeria">
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6b219ab309.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="images/FHCC LOGO NO BKG.png" type="image/x-icon">
-    <title>Flower House Creche Care</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6b219ab309.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/FHCC LOGO NO BKG.png"
+      type="image/x-icon"
+    />
+    <title>Home - Flower House Creche Care</title>
+  </head>
+  <body>
     <!------------------ NAVIGATION BAR -------------------->
     <section class="header">
       <div class="navbar">
         <div class="nav-logo">
-          <img src="images/logo.png" alt="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
         </div>
-        <div class="nav-title">FLOWER HOUSE <br>CRECHE CARE</div>
-        <nav class="nav-menu" id="navLinks">       
-          <i class="menu-icon fas fa-times d-md-none" onclick="hideMenu()"></i>  
-            
+        <div class="nav-title">FLOWER HOUSE <br />CRECHE CARE</div>
+        <nav class="nav-menu" id="navLinks">
+          <i class="menu-icon fas fa-times d-md-none" onclick="hideMenu()"></i>
+          <ul>
+            <li>
               <a href="index.html">
-                <div class="nav-item">
-                <i class=" nav-icon fas fa-home"></i></div>HOME
+                <div class="nav-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="nav-name">Home</div>
               </a>
-            
+            </li>
+            <li>
+              <a href="services.html">
+                <div class="nav-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="nav-name">Services</div>
+              </a>
+            </li>
+            <li>
               <a href="gallery.html">
-                <div class="nav-item">
-                <i class=" nav-icon fas fa-images"></i></div>GALLERY
+                <div class="nav-icon">
+                  <i class="fas fa-images"></i>
+                </div>
+                <div class="nav-name">Gallery</div>
               </a>
-              
+            </li>
+            <li>
               <a href="about.html">
-                <div class="nav-item">
-                <i class=" nav-icon fas fa-info-circle"></i></div>ABOUT
+                <div class="nav-icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="nav-name">About</div>
               </a>
-
+            </li>
+            <li>
               <a href="contact.html">
-                <div class="nav-item">
-                <i class=" nav-icon fas fa-envelope-open-text"></i></div>CONTACT
+                <div class="nav-icon">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="nav-name">Contact</div>
               </a>
+            </li>
+          </ul>
         </nav>
-      <i class="menu-icon d-md-none fas fa-bars" onclick="showMenu()"></i>
+        <i class="menu-icon d-md-none fas fa-bars" onclick="showMenu()"
+          ><p>MENU</p></i
+        >
       </div>
     </section>
 
     <!------------------------ CAROUSEL --------------------------->
-    <div class="carousel-container">
-    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="true" data-bs-wrap="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" ></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="6"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="7"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="8"></button>
-      </div>
-      <div  class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="images/Landscape.jpg" class="d-block w-100" alt="Landscape">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/Office1.jpg" class="d-block w-100" alt="AdminOffice">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/MainClassroom.jpg" class="d-block w-100" alt="MainClassroom">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/OutdoorClassroom.jpg" class="d-block w-100" alt="OutdoorClassroom">
-        </div>        
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/ArtGallery.jpg" class="d-block w-100" alt="ArtGallery">
-        </div>        
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/DressingRoom.jpg" class="d-block w-100" alt="DressingRoom">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/KidsLibrary.jpg" class="d-block w-100" alt="KidsLibrary">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Bedroom.jpg" class="d-block w-100" alt="Bedroom">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Bedroom2.jpg" class="d-block w-100" alt="Bedroom2">
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!----------------------- MISSION STATEMENT -------------------->
-    <section class="mission">
-      <div class="text-block">
-        <h2>Mission Statement</h2>
-        <p>Educating Children, Enriching Lives, Making a Difference and Commitment to Excellence</p>  
-      </div>
-    </section>
- 
-    <!----------------- OUR PROGRAMS SECTION --------------------->
-    <section class="programs">
-        <div class="heading">
-            <h3>OUR PROGRAMS</h3>
-        </div>
-        <div class="programs-container">          
-                <div class="service">
-                    <div class="service-logo">
-                        <img src="images/removal.ai]_tmp-61af515082bdb.png">
-                    </div>
-                    <div class="service-text">
-                      <h3>Day Care</h3>
-                      <p> We offer Day Care services for kids on hourly or daily rates. </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service-logo">
-                        <img src="images/istockphoto-93135471-612x612-removebg-preview.png">
-                    </div>
-                    <div class="service-text">
-                      <h3>Pre-School</h3>
-                      <p>We admit kids between ages 0-5 and lay a sustainable foundation for Basic Education.</p>
-                  </div>
-                </div>
-                <div class="service">
-                    <div class="service-logo">
-                        <img src="images/SectionBeforeAfterIcon.png">
-                    </div>
-                    <div class="servie-text">
-                      <h3>After-School</h3>
-                      <p> We offer After-School services for kids after the close of the regular school day during the academic year. </p>
-                  </div>
-                </div>   
-               <div class="service">
-                <div class="service-logo">
-                    <img src="images/57001901.png">
-                </div>
-                <div class="service-text">
-                  <h3>Hostel</h3>
-                  <p> We provide hostel facilities for kids whose Parents are out of town. </p>
+    <main>
+      <section class="carousel">
+        <div class="carousel-container">
+          <div
+            id="carouselIndicators"
+            class="carousel carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-pause="false"
+            data-bs-touch="true"
+            data-bs-wrap="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="9"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/Landscape.jpg"
+                  class="d-block w-100"
+                  alt="Landscape"
+                />
               </div>
-            </div>       
-    </div>
-    </section>
-     
-    <!---------------------- WHY CHOOSE US SECTION   ------------------->
-    <section id="whychooseus">
-      <div class="heading">
-        <h3>WHY CHOOSE US?</h3>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/Office1.jpg"
+                  class="d-block w-100"
+                  alt="AdminOffice"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/MainClassroom.jpg"
+                  class="d-block w-100"
+                  alt="MainClassroom"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/OutdoorClassroom.jpg"
+                  class="d-block w-100"
+                  alt="OutdoorClassroom"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/ArtGallery.jpg"
+                  class="d-block w-100"
+                  alt="ArtGallery"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/DressingRoom.jpg"
+                  class="d-block w-100"
+                  alt="DressingRoom"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/KidsLibrary.jpg"
+                  class="d-block w-100"
+                  alt="KidsLibrary"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/Bedroom.jpg"
+                  class="d-block w-100"
+                  alt="Bedroom"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/Bedroom2.jpg"
+                  class="d-block w-100"
+                  alt="Bedroom2"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  src="images/carousel-imgs/CrawlersArea.jpg"
+                  class="d-block w-100"
+                  alt="CrawlersArea"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-------------------- WELCOME SECTION ------------------------->
+      
+
+      <!----------------------- MISSION STATEMENT ------------------------->
+      <div class="mission">
+        <div class="text-block">
+          <h2>Mission Statement</h2>
+          <p>
+            Educating Children, Enriching Lives, Making a Difference and
+            Commitment to Excellence
+          </p>
+        </div>
       </div>
-      <div class="why-container">
+
+      <div class="welcome">
+        <div class="welcome-text">
+          <div class="welcome-text-heading">
+            <p>Take a look at our superb facilities</p>
+          </div>
+          <div class="welcome-btn">
+            <a href="facilities.html" class="facility-btn"
+              >Explore Facilities <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------- OUR PROGRAMS SECTION ----------------------->
+      <section class="programs">
+        <div class="heading">
+          <h3>OUR SERVICES</h3>
+        </div>
+        <div class="programs-container">
+          <div class="service">
+            <div class="service-logo">
+              <img src="images/removal.ai]_tmp-61af515082bdb.png" />
+            </div>
+            <div class="service-text">
+              <h3>Creche</h3>
+              <p>
+                We offer Day Care services for babies, toddlers and young children.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-logo">
+              <img
+                src="images/istockphoto-93135471-612x612-removebg-preview.png"
+              />
+            </div>
+            <div class="service-text">
+              <h3>Nursery & Kindergarten</h3>
+              <p>
+                We lay a solid and sustainable foundation
+                for Primary Level Education.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-logo">
+              <img src="images/SectionBeforeAfterIcon.png" />
+            </div>
+            <div class="service-text">
+              <h3>After-School</h3>
+              <p>
+                We offer After-School services for kids after the close of the
+                regular school day during the academic year.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-logo">
+              <img src="images/57001901.png" />
+            </div>
+            <div class="service-text">
+              <h3>Hostel</h3>
+              <p>
+                We provide hostel services for kids whose Parents are out of
+                town.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="welcome">
+        <div class="welcome-text">
+          <div class="welcome-text-heading">
+            <p>Want to find out more about our services?</p>
+          </div>
+          <div class="welcome-btn">
+            <a href="services.html" class="facility-btn"
+              >Learn More <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------- WHY CHOOSE US SECTION   --------------------->
+      <section id="whychooseus">
+        <div class="heading">
+          <h3>WHY CHOOSE US?</h3>
+        </div>
+        <div class="why-container">
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/14hr service new.png">
+              <img src="images/14hr service new.png" />
             </div>
             <div class="bigtext">
-              <h3>14-hour Service</h3>         
-              <p>Our services are very favourable for working Parents. Our services commence at 6am and end at 8pm</p>
+              <h3>14-hour Service</h3>
+              <p>
+                Our services are very favourable for working Parents. Our
+                services commence at 6am and end at 8pm
+              </p>
             </div>
           </div>
-          
+
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/365days.png">
+              <img src="images/365days.png" />
             </div>
             <div class="bigtext">
               <h3>365-Days Availability</h3>
-              <p>No Terminal Holidays for the Pre-Schoolers and Special Services on Weekends & Public Holidays at specialized rates means we are available every day of the year. </p>
+              <p>
+                No Terminal Holidays for the Pre-Schoolers and Special Services
+                on Weekends & Public Holidays at specialized rates means we are
+                available every day of the year.
+              </p>
             </div>
           </div>
-          
+
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/fun learning.png">
+              <img src="images/fun learning.png" />
             </div>
             <div class="bigtext">
               <h3>Learning and fun</h3>
-              <p>We have Kids' Library and Kids' Practical Workshop to provide the kids with hands-on activities that will make learning very enjoyable for them.</p>
+              <p>
+                We have Kids' Library and Kids' Practical Workshop to provide
+                the kids with hands-on activities that will make learning very
+                enjoyable for them.
+              </p>
             </div>
           </div>
-         
-         <div class="why-choose">
-            <div class="why-logo">
-              <img src="images/playground-icon-4.jpg">
-            </div>
-            <div class="bigtext">
-              <h3>Naturally Nurtured Playground</h3>                  <p>Our outdoor playground is tailored to enable kids interact creatively with nature and the environment. </p>
-            </div>
-          </div>
-          
+
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/learning env.png">
+              <img src="images/playground-icon-4.jpg" />
+            </div>
+            <div class="bigtext">
+              <h3>Naturally Nurtured Playground</h3>
+              <p>
+                Our outdoor playground is tailored to enable kids interact
+                creatively with nature and the environment.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-choose">
+            <div class="why-logo">
+              <img src="images/learning env.png" />
             </div>
             <div class="bigtext">
               <h3>Positive Learning Environment</h3>
-              <p>Our environment is very clean, friendly, conducive and secure for learning. Each child is given personal attention in a small-class setting.</p>
+              <p>
+                Our environment is very clean, friendly, conducive and secure
+                for learning. Each child is given personal attention in a
+                small-class setting.
+              </p>
             </div>
-          </div>       
-          
+          </div>
+
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/healthy_meal-removebg-preview.png">
+              <img src="images/healthy_meal-removebg-preview.png" />
             </div>
             <div class="bigtext">
               <h3>Healthy Meals</h3>
-              <p>We provide healthy meals as an healthy diet is very important for a child's general well-being.</p>
+              <p>
+                We provide healthy meals as an healthy diet is very important
+                for a child's general well-being.
+              </p>
             </div>
           </div>
-          
+
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/staff-teacher_ratio-removebg-preview.png">
+              <img src="images/staff-teacher_ratio-removebg-preview.png" />
             </div>
             <div class="bigtext">
               <h3>High Staff-to-Child Ratio</h3>
-              <p>We have a high staff-to-child ratio that guarantees that the kids receive adequate care, attention and supervision</p>
+              <p>
+                We have a high staff-to-child ratio that guarantees that the
+                kids receive adequate care, attention and supervision
+              </p>
             </div>
           </div>
-          
+
           <div class="why-choose">
             <div class="why-logo">
-              <img src="images/24-7_security-removebg-preview.png">
+              <img src="images/24-7_security-removebg-preview.png" />
             </div>
             <div class="bigtext">
-              <h3>24/7 Surveillance</h3>  
-              <p>Surveillance cameras are installed and functioning 24/7 to provide a heightened sense of security.</p>
+              <h3>24/7 Surveillance</h3>
+              <p>
+                Surveillance cameras are installed and functioning 24/7 to
+                provide a heightened sense of security.
+              </p>
             </div>
           </div>
-      </div>
-  </section>
-
-<!-------------- PARENTS' FEEDBACK SECTION   ------------>
-  <section class="testimonial">
-    <div class="heading">
-      <h3>PARENTS' FEEDBACK</h3>
-    </div>
-    <div class="testimonial-container">
-      <div class="testimonial-box">
-        <div class="text-box">
-          <i class="fas fa-quote-left"></i>
-          <h5>Kofoworola Ojajuni</h5>
-          <p>"Very good school with awesome people that make your kids feel at home"</p>
-          <i class="fas fa-quote-right"></i>
         </div>
-      </div>
+      </section>
+  
+
+      <!-------------- PARENTS' FEEDBACK SECTION   ------------>
+      <section class="testimonial">
+        <div class="heading">
+          <h3>PARENTS SPEAK</h3>
+        </div>
+        <div class="d-flex align-items-center pb-5 mh-100">
+          <a
+            class="carousel-control-prev text-decoration-none"
+            href="#mycarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <div
+              class="d-flex flex-column justify-content-center me-2 ms-auto left"
+            >
+              Prev<span class="fas fa-arrow-left"></span>
+            </div>
+            <span class="sr-only">Previous</span>
+          </a>
+          <div class="container">
+            <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#mycarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="3"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="4"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="5"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <p class="review">
+                          "Very good creche with awesome people that make your
+                          kids feel at home"
+                        </p>
+                        <div class="person">
+                          <p class="m-0">Kofoworola Ojajuni</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <p class="review">
+                          "This is amazing. I wish FHCC has a primary school
+                          where my child can continue her great learning"
+                        </p>
+                        <div class="person">
+                          <p class="m-0">Ibileke Oluwaseyi</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <p class="review long-review">
+                          "The best creche in Ikorodu, Lagos, Nigeria. Home away
+                          from home. Never had any reason to worry, for the 5
+                          years my kids spent there. Think quality childcare at
+                          affordable price, think Flower House Creche Care"
+                        </p>
+                        <div class="person">
+                          <p class="m-0">Lolo Akwaugo-Ugoeze Adannaya</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <p class="review">
+                          "Flower House Creche Care, you people are too much!!!"
+                        </p>
+                        <div class="person">
+                          <p class="m-0">Veronica Popoola</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <div class="review">
+                          <p>"Well-done...Keep the good work going!"</p>
+                        </div>
+                        <div class="person">
+                          <p class="m-0">Akinduro Oladipupo Adebimpe</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <p class="review">
+                          "Whaoo! This is brilliant, God bless you our teachers!!"
+                        </p>
+                        <div class="person">
+                          <p class="m-0">Oluwaseun Olatiboye Dele-Aisida</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md">
+                      <div
+                        class="d-flex flex-column justify-content-center img-text"
+                      >
+                        <i class="fas fa-quote-left"></i>
+                        <p class="review">
+                          "The best so far. God bless Flower House Creche Care!"
+                        </p>
+                        <div class="person">
+                          <p class="m-0">Vivian Oyebola</p>
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-next text-decoration-none"
+            href="#mycarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <div
+              class="d-flex flex-column justify-content-center right ms-2 me-auto"
+            >
+              Next <span class="fas fa-arrow-right"></span>
+            </div>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>  
+      </section>
+
+      <section>
+        <div class="welcome">
+          <div class="welcome-text">
+            <div class="welcome-text-heading">
+              <p>Interested in enrolling?</p>
+            </div>
+            <div class="welcome-btn">
+              <a href="enrol.html" class="facility-btn"
+                >Enrol Now <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+      </section>
+
+      <section class="home-gallery">
+        <div class="home-gallery-container">
+          <div class="home-gallery-img">
+            <img src="images/hg1.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/hg2.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/hg3.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/hg5.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/lif6.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/hg4.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/hg6.jpg" alt="">
+          </div>
+          <div class="home-gallery-img">
+            <img src="images/bicy.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="welcome">
+          <div class="welcome-text">
+            <div class="welcome-text-heading">
+              <p>Check out more pictures in our photo gallery</p>
+            </div>
+            <div class="welcome-btn">
+              <a href="gallery.html" class="facility-btn"
+                >View Gallery <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+      </section>
       
-      <div class="testimonial-box">
-        <div class="text-box">
-          <i class="fas fa-quote-left"></i>
-          <h5>Ibileke Oluwaseyi</h5>
-          <p>"This is amazing. I wish FHCC has a primary school where my child can continue her great learning"</p>
-          <i class="fas fa-quote-right"></i>
-        </div>
+      <div class="home-contact">
+        <h3>We Deliver High Quality Child Care & Early Education</h3>
+        <!-- <h4>Reach out to us today</h4> -->
+        <a href="contact.html" class="enrol-btn">Contact Us</a>
       </div>
-        
-      <div class="testimonial-box">
-        <div class="text-box">  
-          <i class="fas fa-quote-left"></i>
-          <h5>Lolo Akwaugo-Ugoeze Adannaya</h5>
-          <p>"The best creche in Ikorodu, Lagos, Nigeria. Home away from home. Never had any reason to worry, for the 5 years my kids spent there. Think quality childcare at affordable price, think Flower House Creche Care"</p>
-          <i class="fas fa-quote-right"></i>    
-        </div>
-      </div>
+      <!-------------- footer  ---------------------->
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer1">
+            <h4>GET IN TOUCH</h4>
+            <div class="contact-icons">
+              <a href="tel:+2348022242422"
+                ><img src="images/phone2-removebg-preview.png"
+              /></a>
 
-      <div class="testimonial-box">
-        <div class="text-box">
-          <i class="fas fa-quote-left"></i>      
-          <h5>Veronica Popoola</h5>
-          <p>"Flower House Creche Care, you people are too much!!!"</p>
-          <i class="fas fa-quote-right"></i>  
+              <a href="https://wa.me/+2348073362906" target="_blank"
+                ><img src="images/whatsapp_nobk.png"
+              /></a>
+
+              <a href="https://facebook.com/fhcrechecare/" target="_blank"
+                ><img src="images/facebook-logo-2019.png"
+              /></a>
+
+              <a href="mailto: fhcceduprogram@gmail.com"
+                ><img src="images/gmail2.png"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer2">
+            <h5>
+              Copyright &#169; 2023 - Flower House Creche Care.<br />
+              All Rights Reserved
+            </h5>
+            <br />
+            <div class="designer">
+              <p>
+                Designed by
+                <a href="https://wa.me/+2347062367015"
+                  >Sky Level Technologies</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      
-    </div>
-  </section>
- 
- <!-------------- footer  ---------------------->
-  <section class="footer">
-  <div class="footer-container">
-    <div class="footer1">
-      <h4>GET IN TOUCH</h4>
-      <div class="contact-icons">
-        <a href="tel:+2348022242422"><img src="images/phone2-removebg-preview.png"></a>
-        
-        <a href="https://wa.me/+2348022242422" target="_blank"><img src="images/whatsapp_nobk.png"></a>
-        
-        <a href="https://facebook.com/fhcrechecare/" target="_blank"><img src="images/facebook-logo-2019.png"></a>
-        
-        <a href = "mailto: fhcceduprogram@gmail.com"><img src="images/gmail2.png"></a>
-      </div>
-    </div>
-    <div class="footer2">
-      <h5>Copyright &#169; 2023 - Flower House Creche Care.<br> All Rights Reserved</h5>
-      <br>
-      <p>Designed by <a href="https://wa.me/+2347062367015">Sky Level Technologies</a></p>
-    </div>
-  </div>
-  </section>
+      </section>
+    </main>
 
-<!------------ Javascript for responsive nav ------------->
-<script>
-  const navLinks = document.getElementById("navLinks");
-  function showMenu(){
-      navLinks.style.right="0";
-  }
-  function hideMenu(){
-      navLinks.style.right="-300px";
-  }
-  </script>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

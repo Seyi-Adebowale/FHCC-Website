@@ -1,0 +1,34 @@
+@import '../styles/global.css';
+
+.enrol-header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/enrol.jpg);
+}
+.enrol-form {
+  width: 60%;
+  margin: 10px auto;
+}
+.enrol-form-header {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.enrol-form input,
+.enrol-form textarea {
+  margin: 10px auto;
+}
+.enrol-form-header h4 {
+  color: #159947;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.enrol-form-header h5 {
+  color: #f78914;
+  line-height: 30px;
+}
+.enrol-form .span-label {
+  margin: 0 auto;
+}
+.enrol-form p {
+  margin: 0;
+}
