@@ -4,9 +4,9 @@
   max-height: 87vh;
 }
 .carousel-indicators [data-bs-target] {
-  height: 10px;
+  height: 15px;
   border: 2px solid white;
-  width: 10px;
+  width: 15px;
   background-color: inherit;
   border-radius: 50%;
 }
