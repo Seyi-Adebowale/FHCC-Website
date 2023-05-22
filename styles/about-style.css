@@ -19,6 +19,9 @@ figure p {
   font-size: 1.3rem;
   color: #159947;
 }
+h2.text-center{
+  color: #f78914;
+}
 .about-text {
   column-count: 2;
   column-gap: 30px;

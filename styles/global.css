@@ -123,6 +123,7 @@ main {
   background-position: center;
   background-size: cover;
   position: relative;
+  font-weight: normal;
 }
 .enrol-btn {
   color: white;
@@ -151,7 +152,7 @@ main {
   background-color: #159947;
   background-position: center;
   background-size: cover;
-  padding: 0px 50px;
+  padding: 0px 40px;
   width: 100%;
 }
 .welcome-text {
@@ -160,9 +161,10 @@ main {
   color: white;
 }
 .welcome-btn {
-  padding: 28px 0;
+  padding: 28px 0px;
+  /* outline: 1px solid red; */
 }
-.facility-btn {
+.welcome-btn a {
   background: transparent;
   border: 2px solid white;
   color: white;
@@ -171,6 +173,9 @@ main {
   font-weight: bold;
   border-radius: 5px;
   text-transform: uppercase;
+}
+.welcome-btn i{
+  display: inline;
 }
 .facility-btn:hover {
   background-color: white;
