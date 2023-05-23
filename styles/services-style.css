@@ -13,13 +13,16 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.services-heading{
+  width: 100%;
+}
 .services-box{
   border: 2px solid #159947;
   border-radius: 20px;
-  width: 400px;
+  width: 390px;
   word-wrap: break-word;
   padding: 0px 20px;
-  margin-bottom: 40px;
+  margin: 0px auto 40px;
 }
 .services-text{
   color: #f78914;
@@ -32,4 +35,9 @@
 }
 .services-text p a:hover{
   color: blue;
+}
+@media (max-width: 450px){
+  .services-box{
+    width: 95%;
+  }
 }
