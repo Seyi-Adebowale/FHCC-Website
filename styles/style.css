@@ -333,3 +333,8 @@
     padding-top: 60px;
   }
 }
+@media (max-width: 340px){
+.text-block {
+  width: 100%;
+}
+}
