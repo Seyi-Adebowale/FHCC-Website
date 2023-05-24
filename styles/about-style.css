@@ -4,40 +4,22 @@
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(../images/KidsLibrary.webp);
 }
-.mission {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  height: 200px;
-}
-.mission h1 {
-  color: #fff;
-  margin-bottom: 40px;
-  padding: 0;
-}
 .text-block {
   background-color: #F9F9F9;
-   border-radius: 20px;
-  width: 60%;
-  padding: 10px;
-  height: 160px;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
 }
 .text-block h2 {
   color: #159947;
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
 }
 .text-block p {
   color: #707070;
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-weight: bold;
   line-height: 40px;
@@ -98,6 +80,11 @@ h2.text-center{
 }
 .accordion-body{
   color: #707070;
+}
+@media (max-width: 860px) {
+  .text-block {
+    width: 90%;
+  }
 }
 @media (max-width: 700px) {
   .about-text {
