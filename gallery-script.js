@@ -44,3 +44,29 @@ document.addEventListener("DOMContentLoaded", function () {
     categorySelect.value = activeGroup;
   }
 });
+
+window.addEventListener("DOMContentLoaded", function() {
+  var images = document.querySelectorAll(".lazy-load-image");
+
+  function setLazyLoading() {
+    var windowWidth = window.innerWidth;
+
+    images.forEach(function(image) {
+      if (windowWidth <= 768) {
+        image.setAttribute("loading", "lazy");
+      } else {
+        image.removeAttribute("loading");
+      }
+    });
+  }
+
+  // Call the function on page load
+  setLazyLoading();
+
+  // Call the function on window resize
+  window.addEventListener("resize", function() {
+    setLazyLoading();
+  });
+});
+
+
