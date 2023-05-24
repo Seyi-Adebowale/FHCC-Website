@@ -18,7 +18,7 @@
   margin-bottom: 40px;
 }
 .contactus-box i {
-  color: #f78914;
+  color: #fe6500;
   font-size: 2.8rem;
 }
 .contactus-text .fab {
@@ -58,7 +58,7 @@
   border: 1px solid #ccc;
 }
 .contactus-form h5 {
-  color: #159947;
+  color: #fe6500;
 }
 @media (max-width: 900px) {
   .sub-header h1 br {

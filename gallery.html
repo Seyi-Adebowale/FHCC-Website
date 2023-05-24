@@ -20,6 +20,7 @@
       type="image/x-icon"
     />
     <title>Gallery - Flower House Creche Care</title>
+    
   </head>
   <body>
     <!------------------ NAVIGATION BAR -------------------->
@@ -88,21 +89,46 @@
         </h1>
       </div>
 
-      <section class="gallery">
-        <div class="gallery-section-header">
-          <h3 class="heading">Creative Arts</h3>
-          <h5>
-            Our creative arts programs provide a space for young children to
-            grow in their abilities, becoming more confident while receiving a
-            huge boost to their development
-          </h5>
-        </div>
 
+    <div class="filter-buttons">
+      <div class="category-select">
+        <label for="category-select">Select a category:</label>
+        <select id="category-select">
+          <option value="creativeArts">Creative Arts</option>
+          <option value="gamesSports">Games and Sports</option>
+          <option value="obstacleCourse">Obstacle Course</option>
+          <option value="funLearning">Fun Learning</option>
+          <option value="natureExploration">Nature Exploration</option>
+          <option value="easterEggHunt">Easter Egg Hunt</option>
+          <option value="valentinesDay">Valentines' Day</option>
+        </select>
+      </div>
+      <div class="category-buttons">
+        <button class="btn active" data-group="creativeArts">Creative Arts</button>
+        <button class="btn" data-group="gamesSports">Games and Sports</button>
+        <button class="btn" data-group="obstacleCourse">Obstacle Course</button>
+        <button class="btn" data-group="funLearning">Fun Learning</button>
+        <button class="btn" data-group="natureExploration">
+        Nature Exploration
+        </button>
+        <button class="btn" data-group="easterEggHunt">Easter Egg Hunt</button>
+        <button class="btn" data-group="valentinesDay">Valentines' Day</button>
+        
+      </div>
+    </div>
+    
+    
+    <div class="gallery">
+      <div class="gallery-item" data-groups='["creativeArts"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra1.webp">
-                <img src="images/cra1.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">Paper mache activity</div>
             </div>
@@ -110,7 +136,11 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra2.webp">
-                <img src="images/cra2.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">A nice hat made from newspapers</div>
             </div>
@@ -118,7 +148,11 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra3.webp">
-                <img src="images/cra3.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra3.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">Some clay work</div>
             </div>
@@ -126,7 +160,11 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra4.webp">
-                <img src="images/cra4.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">Block building</div>
             </div>
@@ -134,7 +172,11 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra5.webp">
-                <img src="images/cra5.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">Block building</div>
             </div>
@@ -142,7 +184,11 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra6.webp">
-                <img src="images/cra6.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra6.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">Lego building</div>
             </div>
@@ -150,7 +196,11 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra7.webp">
-                <img src="images/cra7.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">A beautifully made magazine outfit</div>
             </div>
@@ -158,27 +208,29 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/cra8.webp">
-                <img src="images/cra8.webp" alt="gallery-image" style="width: 100%" />
+                <img
+                  src="images/cra8.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                />
               </a>
               <div class="desc">Painting exercise</div>
             </div>
           </div>
           <div class="clearfix"></div>
         </div>
-
-        <div class="gallery-section-header">
-          <h3 class="heading">Games and Sports</h3>
-          <h5>
-            Through planned physical activity, our program provides an excellent
-            way to assist young children with developing hand-to-eye
-            coordination and improving fine and gross motor skills
-          </h5>
-        </div>
+      </div>
+      <div class="gallery-item" data-groups='["gamesSports"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas1.webp">
-                <img src="images/gas1.webp" alt="gallery-image" style="width: 100%" loading="lazy" />
+                <img
+                  src="images/gas1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Who gets the ball first?</div>
             </div>
@@ -186,7 +238,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas2.webp">
-                <img src="images/gas2.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Basketball</div>
             </div>
@@ -194,7 +251,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas3.webp">
-                <img src="images/gas3.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas3.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Who fills his cup first?</div>
             </div>
@@ -202,15 +264,25 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas4.webp">
-                <img src="images/gas4.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
-              <div class="desc">On the slide</div>
+              <div class="desc">Down the slide</div>
             </div>
           </div>
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas5.webp">
-                <img src="images/gas5.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Blindfolded search game</div>
             </div>
@@ -218,7 +290,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas6.webp">
-                <img src="images/gas6.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas6.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Merry-go-round</div>
             </div>
@@ -226,7 +303,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas7.webp">
-                <img src="images/gas7.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">A game of table tennis</div>
             </div>
@@ -234,7 +316,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas8.webp">
-                <img src="images/gas8.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas8.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Let's go bowling!</div>
             </div>
@@ -242,7 +329,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas9.webp">
-                <img src="images/gas9.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas9.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Egg and spoon. Try not to drop the egg</div>
             </div>
@@ -250,7 +342,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas10.webp">
-                <img src="images/gas10.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas10.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Fun on bicycles</div>
             </div>
@@ -258,7 +355,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas11.webp">
-                <img src="images/gas11.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas11.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">See Saw</div>
             </div>
@@ -266,28 +368,30 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/gas12.webp">
-                <img src="images/gas12.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/gas12.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Some sand play</div>
             </div>
           </div>
           <div class="clearfix"></div>
         </div>
-        
-        <div class="gallery-section-header">
-          <h3 class="heading">Obstacle Course</h3>
-          <h5>
-            Obstacle courses help children to develop strength in different
-            parts of their body; providing them with a full body workout.
-            Outdoor obstacle courses help children solve problems as they learn
-            how to maneuver up, over, or through obstacles.
-          </h5>
-        </div>
+      </div>
+      <div class="gallery-item" data-groups='["obstacleCourse"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs5.webp">
-                <img src="images/obs5.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 1: Jug fill</div>
             </div>
@@ -295,7 +399,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs6.webp">
-                <img src="images/obs6.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs6.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 2: Hop through the ropes</div>
             </div>
@@ -303,7 +412,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs7.webp">
-                <img src="images/obs7.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 3: Toss the ball in</div>
             </div>
@@ -311,7 +425,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs1.webp">
-                <img src="images/obs1.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 4: Burst the balloon</div>
             </div>
@@ -319,7 +438,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs2.webp">
-                <img src="images/obs2.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 5: Spell your name</div>
             </div>
@@ -327,7 +451,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs3.webp">
-                <img src="images/obs3.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs3.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 6: Recreate the Lego block</div>
             </div>
@@ -335,7 +464,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs9.webp">
-                <img src="images/obs9.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs9.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 7: Lime and spoon</div>
             </div>
@@ -343,7 +477,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs8.webp">
-                <img src="images/obs8.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs8.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 8: Score a goal</div>
             </div>
@@ -351,15 +490,27 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs10.webp">
-                <img src="images/obs10.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs10.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
-              <div class="desc">Obstacle 9: Colour match the cones and balls</div>
+              <div class="desc">
+                Obstacle 9: Colour match the cones and balls
+              </div>
             </div>
           </div>
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs4.webp">
-                <img src="images/obs4.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Obstacle 10: Treasure hunt in balloon pool</div>
             </div>
@@ -367,7 +518,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs11.webp">
-                <img src="images/obs11.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs11.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Sweet finish! Found the treasure</div>
             </div>
@@ -375,29 +531,30 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/obs12.webp">
-                <img src="images/obs12.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/obs12.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Is that going in?</div>
             </div>
           </div>
           <div class="clearfix"></div>
         </div>
-        
-        <div class="gallery-section-header">
-          <h3 class="heading">Learning is fun</h3>
-          <h5>
-            Learning with educational toys and materials is fun and enhances a
-            child's learning through developing their logic and problem solving
-            skills, encouraging communication skills, refining motor skills and
-            nurturing their creativity.
-          </h5>
-        </div>
-
+      </div>
+      <div class="gallery-item" data-groups='["funLearning"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif1.webp">
-                <img src="images/lif1.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Learning with picture cards</div>
             </div>
@@ -405,7 +562,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/hg2.webp">
-                <img src="images/hg2.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/hg2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Learning numbers</div>
             </div>
@@ -413,7 +575,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif3.webp">
-                <img src="images/lif3.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif3.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Learning numbers</div>
             </div>
@@ -421,7 +588,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif4.webp">
-                <img src="images/lif4.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Express yourself without a pencil</div>
             </div>
@@ -429,7 +601,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif5.webp">
-                <img src="images/lif5.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Some puzzles</div>
             </div>
@@ -437,7 +614,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif6.webp">
-                <img src="images/lif6.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif6.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Solving puzzles</div>
             </div>
@@ -445,7 +627,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif7.webp">
-                <img src="images/lif7.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Counting exercise</div>
             </div>
@@ -453,35 +640,45 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/lif8.webp">
-                <img src="images/lif8.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/lif8.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Counting exercise</div>
             </div>
           </div>
-          <div class="clearfix"></div>  
+          <div class="clearfix"></div>
         </div>
-        
-        <div class="gallery-section-header">
-          <h3 class="heading">Nature Exploration</h3>
-          <h5>
-            Children are more creative when exposed to nature. Natural
-            environments can help children think beyond their immediate
-            surroundings and improve their critical thinking.
-          </h5>
-        </div>
+      </div>
+      <div class="gallery-item" data-groups='["natureExploration"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne1.webp">
-                <img src="images/ne1.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
-              <div class="desc">The kids witness palm kernel oil processing</div>
+              <div class="desc">
+                The kids witness palm kernel oil processing
+              </div>
             </div>
           </div>
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne2.webp">
-                <img src="images/ne2.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">A starfruit</div>
             </div>
@@ -489,7 +686,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne4.webp">
-                <img src="images/ne4.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">The kids are amazed by sea turtles</div>
             </div>
@@ -497,7 +699,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne5.webp">
-                <img src="images/ne5.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">The kids join in the harvesting of yams</div>
             </div>
@@ -505,7 +712,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne7.webp">
-                <img src="images/ne7.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Pluck the cocoa pod</div>
             </div>
@@ -513,7 +725,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne9.webp">
-                <img src="images/ne9.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne9.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Pawpaw tree</div>
             </div>
@@ -521,7 +738,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne10.webp">
-                <img src="images/ne10.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne10.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Let's pluck some oranges</div>
             </div>
@@ -529,27 +751,30 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/ne11.webp">
-                <img src="images/ne11.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/ne11.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">A nice treat in the atmosphere's ambience</div>
             </div>
           </div>
           <div class="clearfix"></div>
         </div>
-
-        <div class="gallery-section-header">
-          <h3 class="heading">Easter Egg Hunt</h3>
-          <h5>
-            An egg hunt is an Eastertide game during which decorated eggs are
-            hidden for kids to find. Real hard-boiled eggs, which are painted
-            and decorated by the kids are used for this exercise
-          </h5>
-        </div>
+      </div>
+      <div class="gallery-item" data-groups='["easterEggHunt"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh1.webp">
-                <img src="images/eeh1.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Prepping for the painting</div>
             </div>
@@ -557,7 +782,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh2.webp">
-                <img src="images/eeh2.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Found an egg</div>
             </div>
@@ -565,7 +795,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh3.webp">
-                <img src="images/eeh3.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh3.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Found an egg</div>
             </div>
@@ -573,7 +808,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh4.webp">
-                <img src="images/eeh4.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Egg hunt</div>
             </div>
@@ -581,7 +821,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh5.webp">
-                <img src="images/eeh5.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Painted Easter eggs</div>
             </div>
@@ -589,7 +834,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh6.webp">
-                <img src="images/eeh6.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh6.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Egg painting</div>
             </div>
@@ -597,7 +847,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh7.webp">
-                <img src="images/eeh7.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Egg painting</div>
             </div>
@@ -605,26 +860,30 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/eeh8.webp">
-                <img src="images/eeh8.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/eeh8.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Egg painting</div>
             </div>
           </div>
-          <div class="clearfix"></div>  
+          <div class="clearfix"></div>
         </div>
-        
-        <div class="gallery-section-header">
-          <h3 class="heading">Valentines' Day</h3>
-          <h5>
-            In the spirit of love and friendship associated with Valentines'
-            Day, the kids exchange gifts with each other
-          </h5>
-        </div>
+      </div>
+      <div class="gallery-item" data-groups='["valentinesDay"]'>
         <div class="gallery-container">
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val1.webp">
-                <img src="images/val1.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val1.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Red 'n' White -- Love 'n' Light</div>
             </div>
@@ -632,7 +891,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val2.webp">
-                <img src="images/val2.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val2.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
@@ -640,7 +904,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val3.webp">
-                <img src="images/val3.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val3.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
@@ -648,7 +917,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val4.webp">
-                <img src="images/val4.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val4.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
@@ -656,7 +930,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val5.webp">
-                <img src="images/val5.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val5.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
@@ -664,7 +943,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val6.webp">
-                <img src="images/val6.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val6.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
@@ -672,7 +956,12 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val7.webp">
-                <img src="images/val7.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val7.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
@@ -680,81 +969,56 @@
           <div class="gallery-box">
             <div class="gallery-img">
               <a href="images/val8.webp">
-                <img src="images/val8.webp" alt="gallery-image" style="width: 100%" loading="lazy"/>
+                <img
+                  src="images/val8.webp"
+                  alt="gallery-image"
+                  style="width: 100%"
+                  
+                />
               </a>
               <div class="desc">Exchange of gifts</div>
             </div>
           </div>
           <div class="clearfix"></div>
-        </div>       
-        
-      </section>
+        </div>
+      </div>
+    </div>
 
-      <section>
-        <div class="welcome">
-          <div class="welcome-text">
-            <div class="welcome-text-heading">
-              <p>Interested in enrolling?</p>
-            </div>
-            <div class="welcome-btn">
-              <a href="enrol.html" class="facility-btn"
-                >Enrol Now <i class="fas fa-chevron-right"></i
-              ></a>
-            </div>
+    <section>
+      <div class="welcome">
+        <div class="welcome-text">
+          <div class="welcome-text-heading">
+            <p>Interested in enrolling?</p>
           </div>
-      </section>
-
-      <!-------------- footer  ---------------------->
-      <section class="footer">
-        <div class="footer-container">
-          <div class="footer1">
-            <h4>GET IN TOUCH</h4>
-            <div class="contact-icons">
-              <a href="tel:+2348022242422"
-                ><img src="images/phone2-removebg-preview.webp" alt="contact-icon" width="25px" height="25px"
-              /></a>
-
-              <a href="https://wa.me/+2348073362906" target="_blank"
-                ><img src="images/whatsapp_nobk.webp" alt="contact-icon" width="25px" height="25px"
-              /></a>
-
-              <a href="https://facebook.com/fhcrechecare/" target="_blank"
-                ><img src="images/facebook-logo-2019.webp" alt="contact-icon" width="25px" height="25px"
-              /></a>
-
-              <a href="mailto: fhcceduprogram@gmail.com"
-                ><img src="images/gmail2.webp" alt="contact-icon" width="25px" height="25px"
-              /></a>
-            </div>
-          </div>
-          <div class="footer-nav">
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer2">
-            <h5>
-              Copyright &#169; 2023 - Flower House Creche Care.<br />
-              All Rights Reserved
-            </h5>
-            <br />
-            <div class="designer">
-              <p>
-                Designed by
-                <a href="https://wa.me/+2347062367015"
-                  >Sky Level Technologies</a
-                >
-              </p>
-            </div>
+          <div class="welcome-btn">
+            <a href="enrol.html" class="facility-btn"
+              >Enrol Now <i class="fas fa-chevron-right"></i
+            ></a>
           </div>
         </div>
-      </section>
-    </main>
+    </section>
 
+    <a href="#"><i class="fas fa-arrow-up"></i></a>
+    <!-------------- footer  ---------------------->
+    <section class="footer">
+      <div class="contact-icons">
+        <a href="tel:+2348022242422"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/+2348073362906" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/fhcrechecare/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto: fhcceduprogram@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+      <div class="footer-text">
+        <p class="copyright">&#169; Flower House Creche Care 2023 - All Rights Reserved</p>
+        <p class="designer">Designed by
+          <a href="https://wa.me/+2347062367015"
+            >Sky Level Technologies</a
+          ></p>
+      </div>
+    </section>
+  </main>
+
+    <script src="./shuffle.min.js"></script>
+    <script src="./gallery-script.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

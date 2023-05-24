@@ -4,23 +4,43 @@
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(../images/KidsLibrary.webp);
 }
-figure {
+.mission {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
-  padding: 2%;
-  color: black;
+  padding: 20px 0;
+  position: relative;
+  height: 200px;
 }
-figure p {
-  font-size: 2rem;
+.mission h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
 }
-.blockquote {
-  color: #f78914;
+.text-block {
+  background-color: #F9F9F9;
+   border-radius: 20px;
+  width: 60%;
+  padding: 10px;
+  height: 160px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.blockquote-footer {
-  font-size: 1.3rem;
+.text-block h2 {
   color: #159947;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
-h2.text-center{
-  color: #f78914;
+.text-block p {
+  color: #707070;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 40px;
 }
 .about-text {
   column-count: 2;
@@ -35,18 +55,6 @@ h2.text-center{
 }
 .about-text a {
   text-decoration: none;
-}
-.download-btn {
-  color: white;
-  background-color: black;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-.download-btn:hover {
-  background: transparent;
-  border: 2px solid black;
-  color: black;
-  text-decoration: underline;
 }
 .proprietor-container {
   display: flex;
@@ -70,7 +78,7 @@ h2.text-center{
 .lead {
   font-weight: bold;
   list-style-type: none;
-  color: #f78914;
+  color: #fe6500;
 }
 .proprietor ul {
   list-style-type: disc;
@@ -84,6 +92,12 @@ h2.text-center{
 }
 .container {
   padding: 0;
+}
+h2.text-center{
+  color: #159947;
+}
+.accordion-body{
+  color: #707070;
 }
 @media (max-width: 700px) {
   .about-text {

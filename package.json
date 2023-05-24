@@ -1,0 +1,14 @@
+{
+  "name": "fhcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "newgalscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shufflejs": "^6.1.0"
+  }
+}

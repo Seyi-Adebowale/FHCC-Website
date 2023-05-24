@@ -32,7 +32,7 @@ h3{
     transform: translateY(-50%);
     width: 100%;
     word-wrap: break-word;
-    color: #f78914;
+    color: #fe6500;
     font-weight: bold;
 }
 .text-box h3{
@@ -74,7 +74,7 @@ h3{
     height: 250px;
 }
 .play-area-text p{
-    color: #f78914;
+    color: #fe6500;
     font-weight: bold;
     text-align: center;
     font-size: 1.2rem;

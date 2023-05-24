@@ -36,3 +36,39 @@ for (let i = 0; i < nav.length; i++) {
     nav[i].classList.remove("selected");
   }
 }
+
+window.onscroll = function() {
+  scrollFunction();
+  toTopFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    let icons = document.querySelectorAll(".nav-icon");
+    for (let i = 0; i < icons.length; i++) {
+      icons[i].style.display = "none";
+    }
+    document.querySelector(".nav-logo img").style.height = "45px";
+    document.querySelector(".header").style.height = "60px";
+    document.querySelector(".navbar").style.height = "60px";
+    document.querySelector(".fa-bars").style.top = "2px";
+  } else {
+    let icons = document.querySelectorAll(".nav-icon");
+    for (let i = 0; i < icons.length; i++) {
+      icons[i].style.display = "block";
+    }
+    document.querySelector(".nav-logo img").style.height = "65px";
+    document.querySelector(".header").style.height = "80px";
+    document.querySelector(".navbar").style.height = "80px";
+    document.querySelector(".fa-bars").style.top = "12px";
+  }
+}
+
+let icons = document.querySelector("a i.fa-arrow-up");
+function toTopFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    icons.style.display = "block";
+  } else {
+    icons.style.display = "none";
+  }
+}
