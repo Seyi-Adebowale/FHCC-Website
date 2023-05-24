@@ -5,12 +5,10 @@
   flex-wrap: wrap;
   opacity: 1;
 }
-
 .gallery-item {
   margin: 10px;
   opacity: 0;
 }
-
 .category-buttons {
   margin: 10px auto 20px;
   display: flex;
@@ -75,7 +73,6 @@ div.desc {
   text-align: center;
   color: #777;
 }
-
 .category-select label {
   display: block;
   margin-bottom: 5px;
@@ -88,39 +85,27 @@ div.desc {
   margin: 0 auto;
   display: block;
 }
-/* Style the select element */
 select {
-  color: #fe6500; /* Text color */
-  border: 2px solid #fe6500; /* Border style */
-  background: transparent; /* Background color */
-  padding: 8px; /* Adjust padding as needed */
-  border-radius: 8px; /* Adjust border radius as needed */
+  color: #fe6500; 
+  border: 2px solid #fe6500; 
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
 }
-
-/* Style the options within the select element */
 select option {
-  color: #fe6500; /* Text color */
-  background: transparent /* Background color */
+  color: #fe6500;
+  background: transparent
 }
-
-/* Example styling for when the select element is focused */
 select:focus {
   outline: none;
-  box-shadow: 0 0 5px #fe6500; /* Add a box shadow on focus if desired */
+  box-shadow: 0 0 5px #fe6500; 
 }
-select option:hover {
-  background-color: yellow; /* New background color on hover */
-}
-
 @media screen and (min-width: 768px) {
-  /* Styles for screens wider than 768px */
   .category-select {
     display: none;
   }
 }
-
 @media screen and (max-width: 767px) {
-  /* Styles for screens up to 767px */
   .category-buttons {
     display: none;
   }
