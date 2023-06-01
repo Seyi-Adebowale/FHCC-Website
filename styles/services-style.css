@@ -16,18 +16,30 @@
 .services-heading{
   width: 100%;
 }
+.services-heading h3{
+  font-size: 22px;
+  color: #159947;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+
+}
 .services-box{
-  border: 2px solid #159947;
+  box-shadow: 0 4px 8px #159947;
   border-radius: 20px;
   width: 390px;
   word-wrap: break-word;
-  padding: 0px 20px;
+  padding: 0px 20px 10px;
   margin: 0px auto 40px;
+  transition: 0.3s;
+}
+.services-box:hover{
+  transform: translateY(-10px);
 }
 .services-text{
-  color: #fe6500;
+  color: #707070;
   text-align: justify;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 30px;
 }
 .services-text p a{
@@ -36,6 +48,39 @@
 .services-text p a:hover{
   color: blue;
 }
+/* #more {
+  display: none;
+} */
+.read-more-content p {
+  overflow: hidden;
+  max-height: 100px; /* Adjust this value as needed */
+  transition: max-height 0.3s ease;
+}
+
+.read-more-content p.show-more {
+  max-height: none;
+}
+.read-more-content p {
+  display: none;
+  text-align: justify;
+}
+
+.read-more-content p.show-more {
+  display: block;
+}
+.read-more-content:not(:first-child){
+  text-align: center;
+}
+.read-more-btn{
+  padding: 0px 5px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  /* background-color: #707070; */
+}
+
+
 @media (max-width: 450px){
   .services-box{
     width: 95%;
