@@ -125,27 +125,19 @@ main {
   position: relative;
   font-weight: normal;
 }
-.enrol-btn {
+.btn {
   color: white;
   background-color: #fe6500;
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.enrol-btn:hover {
-  background: #159947;
-  color: white;
-}
-.submit-btn {
-  background: #fe6500;
-  color: white;
-  border: transparent;
   padding: 5px 10px;
+  border: transparent;
   font-weight: bold;
+  letter-spacing: 1px;
 }
-.submit-btn:hover {
-  color: white;
-  background-color: #159947;
+@media(hover: hover) {
+  .btn:hover {
+    background-color: #159947;
+    color: white;
+  }
 }
 .welcome {
   margin: auto;

@@ -22,7 +22,6 @@
   text-align: center;
   font-weight: bold;
   padding: 10px;
-
 }
 .services-box{
   box-shadow: 0 4px 8px #159947;
@@ -39,7 +38,6 @@
 .services-text{
   color: #707070;
   text-align: justify;
-  /* font-weight: bold; */
   line-height: 30px;
 }
 .services-text p a{
@@ -48,15 +46,11 @@
 .services-text p a:hover{
   color: blue;
 }
-/* #more {
-  display: none;
-} */
 .read-more-content p {
   overflow: hidden;
-  max-height: 100px; /* Adjust this value as needed */
+  max-height: 100px;
   transition: max-height 0.3s ease;
 }
-
 .read-more-content p.show-more {
   max-height: none;
 }
@@ -64,7 +58,6 @@
   display: none;
   text-align: justify;
 }
-
 .read-more-content p.show-more {
   display: block;
 }
@@ -72,15 +65,12 @@
   text-align: center;
 }
 .read-more-btn{
-  padding: 0px 5px;
+  padding: 5px;
   border-radius: 20px;
   font-size: 12px;
   font-weight: normal;
   text-align: center;
-  /* background-color: #707070; */
 }
-
-
 @media (max-width: 450px){
   .services-box{
     width: 95%;
