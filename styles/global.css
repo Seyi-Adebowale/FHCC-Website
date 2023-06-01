@@ -127,11 +127,15 @@ main {
 }
 .btn {
   color: white;
-  background-color: #fe6500;
+  background: #fe6500;
   padding: 5px 10px;
   border: transparent;
   font-weight: bold;
   letter-spacing: 1px;
+}
+.btn:hover{
+  background: #fe6500;
+  color: white;
 }
 @media(hover: hover) {
   .btn:hover {
