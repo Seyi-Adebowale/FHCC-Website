@@ -70,6 +70,12 @@
   font-size: 12px;
   font-weight: normal;
   text-align: center;
+  transition: 1s;
+}
+@media (hover: hover){
+  .read-more-btn{
+    transition: 0.1s;
+  }
 }
 @media (max-width: 450px){
   .services-box{

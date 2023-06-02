@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var filterButtons = document.querySelectorAll(".filter-buttons .btn");
+  var filterButtons = document.querySelectorAll(".filter-buttons .gallery-btn");
   var categorySelect = document.getElementById("category-select");
   var shuffleInstance = new Shuffle(document.querySelector(".gallery"), {
     itemSelector: ".gallery-item",

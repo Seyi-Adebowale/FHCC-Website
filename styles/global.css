@@ -134,14 +134,11 @@ main {
   letter-spacing: 1px;
 }
 .btn:hover{
-  background: #fe6500;
+  background: #159947;
   color: white;
 }
-@media(hover: hover) {
-  .btn:hover {
-    background-color: #159947;
-    color: white;
-  }
+.btn:focus, .btn:active{
+  background-color: #fe6500;
 }
 .welcome {
   margin: auto;
@@ -210,6 +207,9 @@ main {
 }
 .contact-icons a:hover i{
   background-color: #159947;
+}
+.contact-icons a:focus i{
+  background-color: #fe6500;
 }
 .contact-icons {
   display: flex;

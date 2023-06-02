@@ -5,11 +5,11 @@
     url(../images/enrol.webp);
 }
 .enrol-form {
-  width: 80%;
+  width: 40%;
   margin: 10px auto;
 }
 .enrol-form-header {
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -31,4 +31,9 @@
 }
 .enrol-form p {
   margin: 0;
+}
+@media (max-width: 600px){
+  .enrol-form {
+    width: 80%;
+  }
 }
