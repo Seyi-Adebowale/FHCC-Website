@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 export default function SEO({ title, description, keywords }) {
   const defaultTitle = 'Flower House Creche Care (FHCC)';
   const defaultDescription = 'Flower House Creche Care is a licensed, highly structured, and child-centered creche in Ikorodu, providing an exceptionally safe and natural environment for early education.';
-  const defaultKeywords = 'child care, creche, nursery, pre-nursery, ikorodu, school, early education, FHCC';
+  const defaultKeywords = 'best creche in ikorodu, creche in ikorodu, creche in eyita, child care, nursery, pre-nursery, school, early education, FHCC';
 
   return (
     <Helmet>
