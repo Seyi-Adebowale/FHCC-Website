@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ArrowLeft } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function ThankYouPage() {
   return (
     <div className="min-h-screen bg-warm-white flex items-center justify-center py-32 px-4 relative overflow-hidden">
+      <SEO title="Thank You" />
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none animate-blob" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4 pointer-events-none animate-blob" style={{ animationDelay: '2s' }} />
 

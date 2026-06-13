@@ -5,6 +5,7 @@ import { Send, GraduationCap, ChevronRight, ChevronLeft, Phone, Mail, MapPin, Ch
 import PageHeader from '../components/layout/PageHeader';
 import SectionHeading from '../components/ui/SectionHeading';
 import CTABanner from '../components/ui/CTABanner';
+import SEO from '../components/SEO';
 
 export default function EnrolPage() {
   const navigate = useNavigate();
@@ -18,8 +19,9 @@ export default function EnrolPage() {
     childAge: '',
     program: 'creche',
     startDate: '',
-    additionalInfo: ''
+    message: ''
   });
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
 
@@ -48,6 +50,7 @@ export default function EnrolPage() {
 
   return (
     <div className="bg-warm-white">
+      <SEO title="Enrol Now" description="Secure your childs spot at Flower House Creche Care. Start our simple, secure online enrollment process today." />
       <PageHeader
         title="Enrolment"
         subtitle="Take the first step towards a bright future for your child."

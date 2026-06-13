@@ -3,10 +3,12 @@ import CTABanner from '../components/ui/CTABanner';
 import SectionHeading from '../components/ui/SectionHeading';
 import GalleryGrid from '../components/ui/GalleryGrid';
 import { galleryImages, galleryCategories } from '../data/gallery';
+import SEO from '../components/SEO';
 
 export default function GalleryPage() {
   return (
     <div className="bg-warm-white">
+      <SEO title="Photo Gallery" />
       <PageHeader
         title="Photo Gallery"
         subtitle="A visual journey through the moments of joy, learning, and discovery at FHCC."

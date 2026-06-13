@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send, Clock, CheckCircle2 } from 'lucide-react';
 import PageHeader from '../components/layout/PageHeader';
 import SectionHeading from '../components/ui/SectionHeading';
+import SEO from '../components/SEO';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -27,6 +28,7 @@ export default function ContactPage() {
 
   return (
     <div className="bg-warm-white">
+      <SEO title="Contact Us" description="Get in touch with Flower House Creche Care. We are here to answer your questions and schedule your private tour of our beautiful facility in Ikorodu." />
       <PageHeader
         title="Contact Us"
         subtitle="We'd love to hear from you. Get in touch with us for any inquiries."

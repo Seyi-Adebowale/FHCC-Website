@@ -3,10 +3,12 @@ import PageHeader from '../components/layout/PageHeader';
 import SectionHeading from '../components/ui/SectionHeading';
 import CTABanner from '../components/ui/CTABanner';
 import { facilities, playAreas } from '../data/facilities';
+import SEO from '../components/SEO';
 
 export default function FacilitiesPage() {
   return (
     <div className="bg-warm-white">
+      <SEO title="Our Facilities" />
       <PageHeader
         title="Our Facilities"
         subtitle="A sneak peek into our world of learning, play, and growth."

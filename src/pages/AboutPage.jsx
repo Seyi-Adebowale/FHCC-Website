@@ -6,6 +6,7 @@ import SectionHeading from '../components/ui/SectionHeading';
 import CTABanner from '../components/ui/CTABanner';
 import FAQAccordion from '../components/ui/FAQAccordion';
 import { faqItems } from '../data/faq';
+import SEO from '../components/SEO';
 
 const qualityItems = [
   'We ensure that the environment is secured, clean and conducive for kids',
@@ -20,6 +21,7 @@ const qualityItems = [
 export default function AboutPage() {
   return (
     <div className="bg-warm-white">
+      <SEO title="About Us" />
       <PageHeader
         title="About Us"
         subtitle="Discover the Flower House Creche Care story and our commitment to excellence."

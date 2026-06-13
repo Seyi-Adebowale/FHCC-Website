@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ChevronLeft, ChevronRight, Quote, Clock, CalendarDays, BookOpen, TreePine, Sparkles, Apple, Users, ShieldCheck } from 'lucide-react';
+import SEO from '../components/SEO';
 import SectionHeading from '../components/ui/SectionHeading';
 import CTABanner from '../components/ui/CTABanner';
 import { servicesPreview } from '../data/services';
@@ -43,6 +44,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-warm-white">
+      <SEO title="Home" />
       {/* ======================== PREMIUM FULL-SCREEN HERO ======================== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image Carousel */}

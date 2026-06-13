@@ -4,12 +4,14 @@ import PageHeader from '../components/layout/PageHeader';
 import CTABanner from '../components/ui/CTABanner';
 import SectionHeading from '../components/ui/SectionHeading';
 import { services } from '../data/services';
+import SEO from '../components/SEO';
 
 const iconMap = { Baby, Blocks, GraduationCap, Backpack, CalendarHeart };
 
 export default function ServicesPage() {
   return (
     <div className="bg-warm-white">
+      <SEO title="Our Services" />
       <PageHeader
         title="Our Services"
         subtitle="Comprehensive, world-class child care programs tailored for every stage of your child's development."
