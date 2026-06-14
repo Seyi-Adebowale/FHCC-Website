@@ -41,10 +41,10 @@ export default function Navbar() {
       }`}
     >
       <div
-        className={`mx-auto max-w-7xl transition-colors duration-300 ${
+        className={`mx-auto max-w-7xl transition-all duration-300 ${
           isScrolled
             ? 'bg-white/30 backdrop-blur-md backdrop-saturate-150 border border-white/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-sm'
-            : 'bg-transparent border border-transparent py-2'
+            : 'bg-transparent border border-transparent rounded-full px-4 sm:px-6 py-2 sm:py-3'
         }`}
       >
         <div className="flex items-center justify-between">
@@ -136,6 +136,7 @@ export default function Navbar() {
                   <div key={link.path}>
                     <Link
                       to={link.path}
+                      onClick={() => setIsMobileOpen(false)}
                       className={`block px-5 py-4 rounded-2xl text-base font-medium transition-all ${
                         isActive
                           ? 'bg-primary/5 text-primary-dark font-bold'
@@ -150,6 +151,7 @@ export default function Navbar() {
               <div className="mt-4 pt-4 border-t border-gray-100">
                 <Link
                   to="/enrol"
+                  onClick={() => setIsMobileOpen(false)}
                   className="block w-full text-center px-6 py-4 bg-primary text-white font-bold rounded-2xl shadow-soft"
                 >
                   Enrol Your Child
