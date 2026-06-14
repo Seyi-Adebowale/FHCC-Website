@@ -46,7 +46,7 @@ export default function HomePage() {
     <div className="bg-warm-white">
       <SEO title="Home" />
       {/* ======================== PREMIUM FULL-SCREEN HERO ======================== */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[100dvh] min-h-[100dvh] flex items-center justify-center overflow-hidden">
         {/* Background Image Carousel */}
         <div className="absolute inset-0 z-0">
           <AnimatePresence mode="wait">
@@ -308,7 +308,7 @@ export default function HomePage() {
             >
               <iframe 
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffhcrechecare%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                width="500" 
+                className="w-full sm:w-[500px]"
                 height="600" 
                 style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }} 
                 scrolling="no" 

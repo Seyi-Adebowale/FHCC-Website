@@ -20,12 +20,12 @@ const qualityItems = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-warm-white">
-      <SEO title="About Us" />
+    <div className="bg-warm-white min-h-screen overflow-x-hidden">
+      <SEO title="About Us" description="Learn about Flower House Creche Care. Discover our mission to provide the highest quality early childhood education in a loving, safe environment." />
       <PageHeader
         title="About Us"
-        subtitle="Discover the Flower House Creche Care story and our commitment to excellence."
-        backgroundImage="/images/carousel-imgs/Landscape.webp"
+        subtitle="Discover our story, our mission, and the passionate team behind FHCC."
+        backgroundImage="/images/carousel-imgs/IMG-20241029-WA0001.webp"
       />
 
       {/* Mission Statement */}
@@ -60,10 +60,10 @@ export default function AboutPage() {
               className="lg:col-span-6 relative"
             >
               <div className="grid grid-cols-2 gap-4 lg:gap-6 relative z-10 pb-12">
-                <img src="/images/carousel-imgs/MainClassroom.webp" alt="Classroom" className="rounded-[2rem] shadow-soft w-full h-[250px] object-cover hover:shadow-float transition-all duration-500" />
-                <img src="/images/carousel-imgs/KidsLibrary.webp" alt="Library" className="rounded-[2rem] shadow-soft w-full h-[250px] object-cover lg:translate-y-12 hover:shadow-float transition-all duration-500" />
-                <img src="/images/carousel-imgs/OutdoorClassroom.webp" alt="Outdoor" className="rounded-[2rem] shadow-soft w-full h-[250px] object-cover hover:shadow-float transition-all duration-500" />
-                <img src="/images/carousel-imgs/ArtGallery.webp" alt="Art Gallery" className="rounded-[2rem] shadow-soft w-full h-[250px] object-cover lg:translate-y-12 hover:shadow-float transition-all duration-500" />
+                <img src="/images/carousel-imgs/MainClassroom.webp" alt="Classroom" className="rounded-[2rem] shadow-soft w-full h-40 sm:h-48 md:h-[250px] object-cover hover:shadow-float transition-all duration-500" />
+                <img src="/images/carousel-imgs/KidsLibrary.webp" alt="Library" className="rounded-[2rem] shadow-soft w-full h-40 sm:h-48 md:h-[250px] object-cover translate-y-6 md:translate-y-12 hover:shadow-float transition-all duration-500" />
+                <img src="/images/carousel-imgs/OutdoorClassroom.webp" alt="Outdoor" className="rounded-[2rem] shadow-soft w-full h-40 sm:h-48 md:h-[250px] object-cover hover:shadow-float transition-all duration-500" />
+                <img src="/images/carousel-imgs/ArtGallery.webp" alt="Art Gallery" className="rounded-[2rem] shadow-soft w-full h-40 sm:h-48 md:h-[250px] object-cover translate-y-6 md:translate-y-12 hover:shadow-float transition-all duration-500" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-sage-light/40 to-transparent blur-3xl -z-10 translate-x-12 translate-y-12" />
             </motion.div>

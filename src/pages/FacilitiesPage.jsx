@@ -38,7 +38,7 @@ export default function FacilitiesPage() {
                         src={facility.image}
                         alt={facility.title}
                         loading="lazy"
-                        className="w-full h-[400px] md:h-[500px] lg:h-[550px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                        className="w-full h-[300px] md:h-[400px] lg:h-[450px] object-cover transition-transform duration-1000 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>

@@ -142,7 +142,7 @@ export default function ContactPage() {
                           required
                           value={formState.name}
                           onChange={handleChange}
-                          className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-lg"
+                          className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base"
                           placeholder="John Doe"
                         />
                       </div>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                           required
                           value={formState.email}
                           onChange={handleChange}
-                          className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-lg"
+                          className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base"
                           placeholder="john@example.com"
                         />
                       </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                         required
                         value={formState.subject}
                         onChange={handleChange}
-                        className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-lg"
+                        className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base"
                         placeholder="How can we help you?"
                       />
                     </div>
@@ -182,7 +182,7 @@ export default function ContactPage() {
                         required
                         value={formState.message}
                         onChange={handleChange}
-                        className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none text-lg"
+                        className="w-full px-6 py-3 bg-warm-white border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none text-base"
                         placeholder="Write your message here..."
                       ></textarea>
                     </div>

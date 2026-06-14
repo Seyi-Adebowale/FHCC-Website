@@ -5,7 +5,7 @@ export const services = [
     icon: 'Baby',
     summary: 'We provide Day Care services for babies, toddlers and young children. We provide a loving, secure atmosphere where infants get exceptional care and plenty of affection to support their development.',
     details: 'Our team of dedicated care-givers are deeply committed to giving the children the best care needed for their development.',
-    color: 'from-primary/10 to-sage-light/30',
+    color: 'from-primary to-primary-light',
   },
   {
     id: 'pre-nursery',
@@ -13,7 +13,7 @@ export const services = [
     icon: 'Blocks',
     summary: 'At the age of 24 months, the kids begin pre-nursery class. They will start to identify surrounding objects and pictures, and develop awareness of their preferences and dislikes.',
     details: 'At this stage, the kids will start to connect with their peer group, learn how to share and sort toys, and develop friendships. We help them to develop their language and speaking skills through rhymes, stories and social interaction.',
-    color: 'from-secondary/10 to-cream/50',
+    color: 'from-secondary to-secondary-light',
   },
   {
     id: 'nursery',
@@ -21,7 +21,7 @@ export const services = [
     icon: 'GraduationCap',
     summary: 'At this stage, the kids respond well to staff expectations, display care for others and have the capacity to communicate their thoughts and ideas to adults. They also begin to make independent decisions during activities.',
     details: 'We help them to develop the essential literacy skills, numerical skills, social skills, cognitive skills and physical skills in preparation for Primary Level Education.',
-    color: 'from-accent/10 to-secondary-light/30',
+    color: 'from-primary-light to-sage-light',
   },
   {
     id: 'weekend',
@@ -29,7 +29,7 @@ export const services = [
     icon: 'CalendarHeart',
     summary: 'We provide child care services on weekends and public holidays. We are aware that circumstances could make Parents require child care needs beyond the typical workweek hours of Monday through Friday.',
     details: 'However, such services will require a pre-booking at specialized rates. Check out our rates on the About page for more information on pricing.',
-    color: 'from-cream/60 to-secondary/10',
+    color: 'from-accent to-[#F4A261]',
   },
 ];
 

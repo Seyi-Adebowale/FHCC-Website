@@ -55,12 +55,20 @@ export default function Footer() {
                   <Clock size={14} className="text-secondary" />
                 </div>
                 <div className="text-[14px] text-white/60 pt-1.5">
-                  <span className="block mb-1 font-bold text-white/80">Mon - Thu</span>
-                  <span className="block mb-3">7:00 AM - 7:00 PM</span>
-                  <span className="block mb-1 font-bold text-white/80">Friday</span>
-                  <span className="block mb-3">7:00 AM - 6:00 PM</span>
-                  <span className="block mb-1 font-bold text-white/80">Weekends & Public Holidays</span>
-                  <span className="block italic">By appointment only</span>
+                  <div className="flex flex-col gap-3">
+                    <div>
+                      <span className="block text-white/80 mb-0.5">Monday - Thursday:</span>
+                      <span className="font-semibold text-white">7:00 AM - 7:00 PM</span>
+                    </div>
+                    <div>
+                      <span className="block text-white/80 mb-0.5">Friday:</span>
+                      <span className="font-semibold text-white">7:00 AM - 6:00 PM</span>
+                    </div>
+                    <div>
+                      <span className="block text-white/80 mb-0.5">Weekends & Public Holidays:</span>
+                      <span className="font-semibold text-white italic">By appointment only</span>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
