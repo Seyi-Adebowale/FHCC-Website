@@ -139,25 +139,15 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <AnimatePresence>
         {isMobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+          <div
             className="absolute top-full left-4 right-4 mt-2 bg-white rounded-3xl shadow-float p-6 flex flex-col md:hidden z-40 border border-gray-100 overflow-hidden"
           >
             <nav className="flex flex-col gap-2">
               {navLinks.map((link, index) => {
                 const isActive = location.pathname === link.path;
                 return (
-                  <motion.div
-                    key={link.path}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                  >
+                  <div key={link.path}>
                     <Link
                       to={link.path}
                       className={`block px-5 py-4 rounded-2xl text-base font-medium transition-all ${
@@ -168,26 +158,20 @@ export default function Navbar() {
                     >
                       {link.label}
                     </Link>
-                  </motion.div>
+                  </div>
                 );
               })}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="mt-4 pt-4 border-t border-gray-100"
-              >
+              <div className="mt-4 pt-4 border-t border-gray-100">
                 <Link
                   to="/enrol"
                   className="block w-full text-center px-6 py-4 bg-primary text-white font-bold rounded-2xl shadow-soft"
                 >
                   Enrol Your Child
                 </Link>
-              </motion.div>
+              </div>
             </nav>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </header>
   );
 }
