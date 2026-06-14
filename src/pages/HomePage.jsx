@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ChevronLeft, ChevronRight, Quote, Clock, CalendarDays, BookOpen, TreePine, Sparkles, Apple, Users, ShieldCheck } from 'lucide-react';
@@ -25,6 +25,8 @@ const homeGalleryImages = [
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [testimonialIndex, setTestimonialIndex] = useState(0);
+  const [fbWidth, setFbWidth] = useState(340);
+  const fbContainerRef = useRef(null);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
@@ -40,6 +42,20 @@ export default function HomePage() {
       setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
     }, 8000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const updateFbWidth = () => {
+      if (fbContainerRef.current) {
+        // Facebook width must be between 180 and 500
+        const currentWidth = fbContainerRef.current.offsetWidth;
+        setFbWidth(Math.min(Math.max(currentWidth, 180), 500));
+      }
+    };
+    
+    updateFbWidth();
+    window.addEventListener('resize', updateFbWidth);
+    return () => window.removeEventListener('resize', updateFbWidth);
   }, []);
 
   return (
@@ -306,10 +322,10 @@ export default function HomePage() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="bg-white rounded-[2rem] shadow-float p-2 sm:p-4 border border-gray-50 overflow-hidden w-full max-w-[530px] flex justify-center"
             >
-              <div className="w-full flex justify-center overflow-hidden relative" style={{ height: "600px" }}>
+              <div ref={fbContainerRef} className="w-full flex justify-center overflow-hidden relative" style={{ height: "600px" }}>
                 <iframe 
-                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffhcrechecare%2F&tabs=timeline&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                  className="w-full max-w-[500px]"
+                  src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffhcrechecare%2F&tabs=timeline&width=${fbWidth}&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`} 
+                  width={fbWidth}
                   height="600" 
                   style={{ border: 'none', overflow: 'hidden' }} 
                   scrolling="no" 

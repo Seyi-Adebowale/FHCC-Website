@@ -2055,6 +2055,13 @@
       }
     }
   }
+  .hover\:bg-\[\#E07A5F\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #E07A5F;
+      }
+    }
+  }
   .hover\:bg-gray-50 {
     &:hover {
       @media (hover: hover) {

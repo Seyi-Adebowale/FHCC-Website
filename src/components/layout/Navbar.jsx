@@ -36,22 +36,22 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         isScrolled ? 'pt-4 px-4 sm:px-6' : 'pt-6 px-4 sm:px-8'
       }`}
     >
       <div
-        className={`mx-auto max-w-7xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`mx-auto max-w-7xl transition-colors duration-300 ${
           isScrolled
             ? 'bg-white/30 backdrop-blur-md backdrop-saturate-150 border border-white/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-sm'
-            : 'bg-white/0 border border-white/0 py-2'
+            : 'bg-transparent border border-transparent py-2'
         }`}
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-4 group z-50">
-            <motion.div
-              className={`p-1.5 rounded-full transition-colors duration-500 ${
+            <div
+              className={`p-1.5 rounded-full transition-colors duration-300 ${
                 isScrolled ? 'bg-white shadow-soft' : 'bg-white/10 backdrop-blur-md'
               }`}
             >
@@ -60,15 +60,15 @@ export default function Navbar() {
                 alt="Flower House Creche Care Logo"
                 className="w-12 h-12 md:w-14 md:h-14 rounded-full"
               />
-            </motion.div>
-            <div className={`hidden sm:block transition-colors duration-500 ${
+            </div>
+            <div className={`hidden sm:block transition-colors duration-300 ${
               needLightText ? 'text-white' : 'text-primary-dark'
             }`}>
               <h1 className="font-heading text-[15px] md:text-base font-bold leading-tight tracking-[0.05em] text-inherit">
                 FLOWER HOUSE
               </h1>
-              <p className={`font-heading text-[11px] md:text-xs font-semibold tracking-widest uppercase transition-opacity duration-500 text-inherit ${
-                needLightText ? 'opacity-80' : 'text-text-muted'
+              <p className={`font-heading text-[11px] md:text-xs font-semibold tracking-widest uppercase transition-colors duration-300 text-inherit ${
+                needLightText ? 'text-white/80' : 'text-text-muted'
               }`}>
                 CRECHE CARE
               </p>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`relative px-4 py-2 md:py-3 text-sm font-medium rounded-full transition-all duration-300 group ${
+                  className={`relative px-4 py-2 md:py-3 text-sm font-medium rounded-full transition-colors duration-300 group ${
                     needLightText
                       ? 'text-white/90 hover:text-white'
                       : isActive
@@ -92,29 +92,15 @@ export default function Navbar() {
                   }`}
                 >
                   {link.label}
-                  {isActive && !isScrolled && needLightText && (
-                    <motion.div
-                      layoutId="navActiveIndicator"
-                      className="absolute bottom-1 left-1/2 -translate-x-1/2 w-4 h-1 bg-white rounded-full"
-                      transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                    />
-                  )}
-                  {isActive && (isScrolled || !needLightText) && (
-                    <motion.div
-                      layoutId="navActiveIndicator"
-                      className="absolute bottom-1 left-1/2 -translate-x-1/2 w-4 h-1 bg-primary rounded-full"
-                      transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                    />
-                  )}
                 </Link>
               );
             })}
             <Link
               to="/enrol"
-              className={`ml-2 px-6 py-3 font-semibold text-sm rounded-full transition-all duration-300 hover:-translate-y-0.5 ${
+              className={`ml-2 px-6 py-3 font-semibold text-sm rounded-full transition-colors duration-300 ${
                 needLightText
-                  ? 'bg-secondary text-white shadow-[0_4px_20px_rgba(224,122,95,0.4)] hover:shadow-[0_6px_25px_rgba(224,122,95,0.6)]'
-                  : 'bg-primary text-white shadow-[0_4px_20px_rgba(30,77,59,0.3)] hover:shadow-[0_6px_25px_rgba(30,77,59,0.5)]'
+                  ? 'bg-secondary text-white hover:bg-[#E07A5F]'
+                  : 'bg-primary text-white hover:bg-primary-dark'
               }`}
             >
               Enrol Now
