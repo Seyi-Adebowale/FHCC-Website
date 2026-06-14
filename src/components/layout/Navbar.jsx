@@ -5,9 +5,10 @@ import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { path: '/', label: 'Home' },
-  { path: '/services', label: 'Services' },
-  { path: '/gallery', label: 'Gallery' },
   { path: '/about', label: 'About' },
+  { path: '/services', label: 'Services' },
+  { path: '/facilities', label: 'Facilities' },
+  { path: '/gallery', label: 'Gallery' },
   { path: '/contact', label: 'Contact' },
 ];
 
@@ -76,14 +77,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1.5 lg:gap-3">
+          <nav className="hidden md:flex items-center gap-1 lg:gap-1.5">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`relative px-4 py-2 md:py-3 text-sm font-medium rounded-full transition-colors duration-300 group ${
+                  className={`relative px-3 py-2 md:py-2.5 text-[13px] lg:text-sm font-medium rounded-full transition-colors duration-300 group ${
                     needLightText
                       ? 'text-white/90 hover:text-white'
                       : isActive

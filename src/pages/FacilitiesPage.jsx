@@ -12,7 +12,7 @@ export default function FacilitiesPage() {
       <PageHeader
         title="Our Facilities"
         subtitle="A sneak peek into our world of learning, play, and growth."
-        backgroundImage="/images/Landscape.webp"
+        backgroundImage="/images/carousel-imgs/MainClassroom.webp"
       />
 
       {/* Facilities Showcase */}
