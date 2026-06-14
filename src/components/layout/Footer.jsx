@@ -66,7 +66,7 @@ export default function Footer() {
                     </div>
                     <div>
                       <span className="block text-white/80 mb-0.5">Weekends & Public Holidays:</span>
-                      <span className="font-semibold text-white italic">By appointment only</span>
+                      <span className="font-semibold text-white">By appointment only</span>
                     </div>
                   </div>
                 </div>

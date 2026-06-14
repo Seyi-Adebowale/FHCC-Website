@@ -96,9 +96,9 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h4 className="text-sm font-bold uppercase tracking-widest text-secondary mb-2">Working Hours</h4>
-                        <p className="text-white/80 text-lg">Mon - Thu: 7:00 AM - 7:00 PM</p>
-                        <p className="text-white/80 text-lg mt-1">Friday: 7:00 AM - 6:00 PM</p>
-                        <p className="text-white/80 text-lg mt-1">Weekends & Public Holidays: <span className="text-base italic opacity-80">By appointment only</span></p>
+                        <p className="text-white/80 text-lg">Monday - Thursday: <span className="text-white/60">7 AM - 7 PM</span></p>
+                        <p className="text-white/80 text-lg mt-1">Friday: <span className="text-white/60">7 AM - 6 PM</span></p>
+                        <p className="text-white/80 text-lg mt-1">Weekends & Public Holidays: <span className="text-white/60">By appointment only</span></p>
                       </div>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="h-[400px] md:h-[500px] w-full rounded-[2.5rem] overflow-hidden shadow-soft border border-gray-50">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.3324673648356!2d3.5134700000000003!3d6.620029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bed6c9c646e7f%3A0xc31a74d2b27cc0a2!2s50%20Eyita-Ojokoro%20Road%2C%20Ikorodu%2C%20Lagos%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              src="https://maps.google.com/maps?q=Flower%20House%20Creche%20Care,%2050%20Eyita-Ojokoro%20Road,%20Ikorodu,%20Lagos%20State&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -215,7 +215,7 @@ export default function ContactPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="FHCC Location Map"
-              className="grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+              className="transition-all duration-700"
             />
           </div>
         </div>

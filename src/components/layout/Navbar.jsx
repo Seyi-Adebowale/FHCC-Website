@@ -86,9 +86,11 @@ export default function Navbar() {
                   to={link.path}
                   className={`relative px-3 py-2 md:py-2.5 text-[13px] lg:text-sm font-medium rounded-full transition-colors duration-300 group ${
                     needLightText
-                      ? 'text-white/90 hover:text-white'
+                      ? isActive
+                        ? 'text-white font-bold underline decoration-2 underline-offset-8'
+                        : 'text-white/90 hover:text-white hover:bg-white/10'
                       : isActive
-                        ? 'text-primary-dark font-bold bg-primary/5'
+                        ? 'text-primary-dark font-bold underline decoration-2 underline-offset-8'
                         : 'text-text-muted hover:text-primary-dark hover:bg-gray-50'
                   }`}
                 >
@@ -140,7 +142,7 @@ export default function Navbar() {
                       onClick={() => setIsMobileOpen(false)}
                       className={`block px-5 py-4 rounded-2xl text-base font-medium transition-all ${
                         isActive
-                          ? 'bg-primary/5 text-primary-dark font-bold'
+                          ? 'text-primary-dark font-bold underline decoration-2 underline-offset-8'
                           : 'text-text-muted hover:bg-gray-50 hover:text-primary-dark'
                       }`}
                     >

@@ -18,6 +18,8 @@ export default function PageHeader({ title, subtitle, backgroundImage }) {
           <div className="w-full h-full bg-gradient-to-br from-primary-dark via-primary to-primary-light" />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/60 to-transparent" />
+        {/* Dark overlay at the top for better menu visibility */}
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-primary-dark/90 via-primary-dark/40 to-transparent" />
       </div>
 
       {/* Decorative blobs */}
