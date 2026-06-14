@@ -96,14 +96,20 @@ h1, h2, h3, h4, h5, h6 {
 @layer utilities {
   .animate-float {
     animation: float 4s ease-in-out infinite;
+    will-change: transform;
+    transform: translateZ(0);
   }
 
   .animate-float-slow {
     animation: float-slow 6s ease-in-out infinite;
+    will-change: transform;
+    transform: translateZ(0);
   }
 
   .animate-blob {
     animation: blob 10s infinite;
+    will-change: transform;
+    transform: translateZ(0);
   }
 
   .glass-panel {

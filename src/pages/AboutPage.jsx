@@ -25,7 +25,7 @@ export default function AboutPage() {
       <PageHeader
         title="About Us"
         subtitle="Discover our story, our mission, and the passionate team behind FHCC."
-        backgroundImage="/images/carousel-imgs/IMG-20241029-WA0001.webp"
+        backgroundImage="/images/carousel-imgs/Landscape.webp"
       />
 
       {/* Mission Statement */}

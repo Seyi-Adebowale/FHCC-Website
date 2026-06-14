@@ -28,7 +28,7 @@ export const services = [
     title: 'Weekend Care',
     icon: 'CalendarHeart',
     summary: 'We provide child care services on weekends and public holidays. We are aware that circumstances could make Parents require child care needs beyond the typical workweek hours of Monday through Friday.',
-    details: 'However, such services will require a pre-booking at specialized rates. Check out our rates on the About page for more information on pricing.',
+    details: 'However, such services will require a pre-booking at specialized rates.',
     color: 'from-accent to-[#F4A261]',
   },
 ];

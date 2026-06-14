@@ -44,7 +44,7 @@ export default function Navbar() {
         className={`mx-auto max-w-7xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isScrolled
             ? 'bg-white/30 backdrop-blur-md backdrop-saturate-150 border border-white/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-sm'
-            : 'bg-transparent py-2'
+            : 'bg-white/0 border border-white/0 py-2'
         }`}
       >
         <div className="flex items-center justify-between">

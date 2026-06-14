@@ -306,17 +306,19 @@ export default function HomePage() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="bg-white rounded-[2rem] shadow-float p-2 sm:p-4 border border-gray-50 overflow-hidden w-full max-w-[530px] flex justify-center"
             >
-              <iframe 
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffhcrechecare%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                className="w-full sm:w-[500px]"
-                height="600" 
-                style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }} 
-                scrolling="no" 
-                frameBorder="0" 
-                allowFullScreen={true} 
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                title="FHCC Facebook Feed"
-              ></iframe>
+              <div className="w-full flex justify-center overflow-hidden relative" style={{ height: "600px" }}>
+                <iframe 
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffhcrechecare%2F&tabs=timeline&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                  className="w-full max-w-[500px]"
+                  height="600" 
+                  style={{ border: 'none', overflow: 'hidden' }} 
+                  scrolling="no" 
+                  frameBorder="0" 
+                  allowFullScreen={true} 
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="FHCC Facebook Feed"
+                ></iframe>
+              </div>
             </motion.div>
           </div>
         </div>
